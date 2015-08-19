@@ -13,10 +13,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
+	let healthManager:HealthManager = HealthManager()
+	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		return true
+	}
+	
+	func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+		if let infoDictionary = userInfo as? [String: String],
+			message = infoDictionary["message"]
+		{
+			let weight = (message as NSString).doubleValue
+			healthManager.storeWeight(weight)
+			
+			
+			let response = "\(message), and the iPhone app has seen it."
+			
+			let responseDictionary = ["message" : response]
+			
+			reply(responseDictionary)
+		}
 	}
 
 	func applicationWillResignActive(application: UIApplication) {
