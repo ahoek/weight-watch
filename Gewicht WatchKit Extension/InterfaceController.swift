@@ -18,12 +18,21 @@ class InterfaceController: WKInterfaceController {
 	
 	@IBOutlet weak var enteredWeightLabel: WKInterfaceLabel!
 
-	var userIsInTheMiddleOfTypingANumber = false
+	var userIsInTheMiddleOfTypingANumber = false {
+		didSet {
+			if userIsInTheMiddleOfTypingANumber {
+				enteredWeightLabel.setTextColor(UIColor.whiteColor())
+			} else {
+				enteredWeightLabel.setTextColor(UIColor.greenColor())
+			}
+		}
+	}
 	
 	// Change textlabel
-	var enteredWeight = "0" {
+	var weight = "0" {
 		didSet {
-			enteredWeightLabel.setText(enteredWeight)
+			//let weightFormatter = NSMassFormatter()
+			enteredWeightLabel.setText(weight)
 		}
 	}
 	
@@ -67,44 +76,43 @@ class InterfaceController: WKInterfaceController {
 		if userIsInTheMiddleOfTypingANumber {
 			
 			// remove rightmost digit
-			let length = count(enteredWeight)
+			let length = count(weight)
 			if length > 0 {
-				enteredWeight = dropLast(enteredWeight)
+				weight = dropLast(weight)
 			}
 			if length == 1 {
 				userIsInTheMiddleOfTypingANumber = false
-				enteredWeight = "0"
+				weight = "0"
 			}
 		}
 	}
 	
 	@IBAction func submitWeight() {
-		//enteredWeight = "0"
-		sendMessageToParentAppWithString(enteredWeight)
+		sendMessageToParentApp((weight as NSString).doubleValue)
 	}
 	
 	func appendDigit(digit: String) {
 		if userIsInTheMiddleOfTypingANumber {
 			// Do not allow two decimal points in number
-			if digit == "." && enteredWeight.rangeOfString(".") == nil {
-				enteredWeight = enteredWeight + "."
+			if digit == "." && weight.rangeOfString(".") == nil {
+				weight = weight + "."
 			} else {
-				enteredWeight = enteredWeight + digit
+				weight = weight + digit
 			}
 		} else {
 			// First digit
 			if digit == "." {
-				enteredWeight = "0."
+				weight = "0."
 			} else {
-				enteredWeight = digit
+				weight = digit
 			}
 			userIsInTheMiddleOfTypingANumber = true
 		}
 		
 	}
 	
-	func sendMessageToParentAppWithString(messageText: String) {
-		let infoDictionary = ["message" : messageText]
+	func sendMessageToParentApp(message: Double) {
+		let infoDictionary = ["message" : message]
 		
 		WKInterfaceController.openParentApplication(infoDictionary) {
 			(replyDictionary, error) -> Void in
@@ -112,6 +120,7 @@ class InterfaceController: WKInterfaceController {
 			if let castedResponseDictionary = replyDictionary as? [String: String],
 				responseMessage = castedResponseDictionary["message"]
 			{
+				self.userIsInTheMiddleOfTypingANumber = false
 				println(responseMessage)
 			}
 		}

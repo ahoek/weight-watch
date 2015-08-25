@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
@@ -10,90 +10,105 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Gewicht_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="SyM-UM-neH">
+                        <group width="1" height="1" alignment="left" layout="vertical" spacing="2" id="nTb-87-eQ9">
                             <items>
-                                <button height="1" alignment="left" title="Opslaan" id="zer-je-s4H">
-                                    <connections>
-                                        <action selector="submitWeight" destination="AgC-eL-Hgc" id="xuQ-Hu-hmF"/>
-                                    </connections>
-                                </button>
-                                <label alignment="right" verticalAlignment="center" text="0" textAlignment="right" id="TQC-co-50g"/>
-                            </items>
-                        </group>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="77U-do-Cm0">
-                            <items>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="7" id="Ykj-wY-3ui">
-                                    <connections>
-                                        <action selector="enterSeven" destination="AgC-eL-Hgc" id="KwU-RF-XyT"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="8" id="eX2-Nd-sjs">
-                                    <connections>
-                                        <action selector="enterEight" destination="AgC-eL-Hgc" id="uJI-zU-1Jh"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="9" id="5wZ-I6-xKY">
-                                    <connections>
-                                        <action selector="enterNine" destination="AgC-eL-Hgc" id="DNS-Zb-a6a"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="erL-aS-2mQ">
-                            <items>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="4" id="FhN-Jb-g2I">
-                                    <connections>
-                                        <action selector="enterFour" destination="AgC-eL-Hgc" id="vOq-ti-zds"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="5" id="YBf-uj-EKo">
-                                    <connections>
-                                        <action selector="enterFive" destination="AgC-eL-Hgc" id="fCM-bX-JPs"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="6" id="1hb-rk-Hus">
-                                    <connections>
-                                        <action selector="enterSix" destination="AgC-eL-Hgc" id="zDq-SK-Pvu"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="LEs-U1-mtc">
-                            <items>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="1" id="F1V-KI-hKT">
-                                    <connections>
-                                        <action selector="enterOne" destination="AgC-eL-Hgc" id="6SK-IU-zUV"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="2" id="KuR-tM-cnt">
-                                    <connections>
-                                        <action selector="enterTwo" destination="AgC-eL-Hgc" id="ewa-Xm-icS"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="3" id="njX-UK-K01">
-                                    <connections>
-                                        <action selector="enterThree" destination="AgC-eL-Hgc" id="CT6-82-9vW"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="0.20000000000000015" alignment="left" id="I61-wr-Tab">
-                            <items>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="." id="Lsk-bI-0m9">
-                                    <connections>
-                                        <action selector="enterDecimalPoint" destination="AgC-eL-Hgc" id="p8H-e8-6La"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="0" id="ocI-oU-DZX">
-                                    <connections>
-                                        <action selector="enterZero" destination="AgC-eL-Hgc" id="ENe-Wc-2C4"/>
-                                    </connections>
-                                </button>
-                                <button width="0.33333000000000002" height="1" alignment="left" title="←" id="54N-TG-K6t">
-                                    <connections>
-                                        <action selector="backspace" destination="AgC-eL-Hgc" id="54m-9P-0MB"/>
-                                    </connections>
-                                </button>
+                                <group width="1" height="0.20000000000000015" alignment="left" id="SyM-UM-neH">
+                                    <items>
+                                        <button alignment="left" id="zer-je-s4H">
+                                            <group key="contentGroup" width="1" height="1" alignment="left" id="W6w-Z3-DdZ">
+                                                <items>
+                                                    <label height="1" alignment="center" verticalAlignment="center" text="0" textAlignment="right" id="TQC-co-50g">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="submitWeight" destination="AgC-eL-Hgc" id="xuQ-Hu-hmF"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.80000000000000004" alignment="left" layout="vertical" spacing="2" id="Qxx-M8-TIT">
+                                    <items>
+                                        <group height="0.25" alignment="left" spacing="2" id="77U-do-Cm0">
+                                            <items>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="7" id="Ykj-wY-3ui">
+                                                    <connections>
+                                                        <action selector="enterSeven" destination="AgC-eL-Hgc" id="KwU-RF-XyT"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="center" title="8" id="eX2-Nd-sjs">
+                                                    <connections>
+                                                        <action selector="enterEight" destination="AgC-eL-Hgc" id="uJI-zU-1Jh"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="right" title="9" id="5wZ-I6-xKY">
+                                                    <connections>
+                                                        <action selector="enterNine" destination="AgC-eL-Hgc" id="DNS-Zb-a6a"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group height="0.25" alignment="left" spacing="2" id="erL-aS-2mQ">
+                                            <items>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="4" id="FhN-Jb-g2I">
+                                                    <connections>
+                                                        <action selector="enterFour" destination="AgC-eL-Hgc" id="vOq-ti-zds"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="5" id="YBf-uj-EKo">
+                                                    <connections>
+                                                        <action selector="enterFive" destination="AgC-eL-Hgc" id="fCM-bX-JPs"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="6" id="1hb-rk-Hus">
+                                                    <connections>
+                                                        <action selector="enterSix" destination="AgC-eL-Hgc" id="zDq-SK-Pvu"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group height="0.25" alignment="left" spacing="2" id="LEs-U1-mtc">
+                                            <items>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="1" id="F1V-KI-hKT">
+                                                    <connections>
+                                                        <action selector="enterOne" destination="AgC-eL-Hgc" id="6SK-IU-zUV"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="2" id="KuR-tM-cnt">
+                                                    <connections>
+                                                        <action selector="enterTwo" destination="AgC-eL-Hgc" id="ewa-Xm-icS"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="3" id="njX-UK-K01">
+                                                    <connections>
+                                                        <action selector="enterThree" destination="AgC-eL-Hgc" id="CT6-82-9vW"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group height="0.25" alignment="left" spacing="2" id="I61-wr-Tab">
+                                            <items>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="." id="Lsk-bI-0m9">
+                                                    <connections>
+                                                        <action selector="enterDecimalPoint" destination="AgC-eL-Hgc" id="p8H-e8-6La"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="0" id="ocI-oU-DZX">
+                                                    <connections>
+                                                        <action selector="enterZero" destination="AgC-eL-Hgc" id="ENe-Wc-2C4"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33333000000000002" height="1" alignment="left" title="←" id="54N-TG-K6t">
+                                                    <connections>
+                                                        <action selector="backspace" destination="AgC-eL-Hgc" id="54m-9P-0MB"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
