@@ -21,15 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 	
 	func application(application: UIApplication,
-		handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
-		reply: (([NSObject : AnyObject]!) -> Void)!) {
+		handleWatchKitExtensionRequest userInfo: [NSObject: AnyObject]?,
+		reply: (([NSObject: AnyObject]!) -> Void)!) {
 		if let infoDictionary = userInfo as? [String: Double],
 			message = infoDictionary["message"]
 		{
 			let weight = message
 			healthManager.storeWeight(weight)
 				
-			let response = "\(message), and the iPhone app has seen it."
+			let response = "Gewicht \(message) was stored."
 				
 			let responseDictionary = ["message" : response]
 				

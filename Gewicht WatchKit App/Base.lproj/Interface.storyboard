@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Gewicht-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Gewicht_WatchKit_App" customModuleProvider="target">
+                <controller title="Gewicht" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Gewicht_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" spacing="2" id="nTb-87-eQ9">
                             <items>
@@ -18,8 +18,9 @@
                                             <group key="contentGroup" width="1" height="1" alignment="left" id="W6w-Z3-DdZ">
                                                 <items>
                                                     <label height="1" alignment="center" verticalAlignment="center" text="0" textAlignment="right" id="TQC-co-50g">
-                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                        <fontDescription key="font" type="system" pointSize="23"/>
                                                     </label>
+                                                    <label alignment="right" verticalAlignment="center" id="6VX-u0-hYD"/>
                                                 </items>
                                                 <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                                             </group>
@@ -114,6 +115,7 @@
                     </items>
                     <connections>
                         <outlet property="enteredWeightLabel" destination="TQC-co-50g" id="LbZ-6c-jBT"/>
+                        <outlet property="statusLabel" destination="6VX-u0-hYD" id="lmP-Fy-pLz"/>
                     </connections>
                 </controller>
             </objects>

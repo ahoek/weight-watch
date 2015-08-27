@@ -18,11 +18,15 @@ class InterfaceController: WKInterfaceController {
 	
 	@IBOutlet weak var enteredWeightLabel: WKInterfaceLabel!
 
+	@IBOutlet weak var statusLabel: WKInterfaceLabel!
+	
 	var userIsInTheMiddleOfTypingANumber = false {
 		didSet {
-			if userIsInTheMiddleOfTypingANumber {
+			if userIsInTheMiddleOfTypingANumber || weight == "0" {
+				statusLabel.setText("");
 				enteredWeightLabel.setTextColor(UIColor.whiteColor())
 			} else {
+				statusLabel.setText("👍");
 				enteredWeightLabel.setTextColor(UIColor.greenColor())
 			}
 		}
@@ -88,6 +92,7 @@ class InterfaceController: WKInterfaceController {
 	}
 	
 	@IBAction func submitWeight() {
+		enteredWeightLabel.setTextColor(UIColor.orangeColor())
 		sendMessageToParentApp((weight as NSString).doubleValue)
 	}
 	
