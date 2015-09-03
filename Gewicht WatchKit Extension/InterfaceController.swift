@@ -126,7 +126,7 @@ class InterfaceController: WKInterfaceController {
 				responseMessage = castedResponseDictionary["message"]
 			{
 				self.userIsInTheMiddleOfTypingANumber = false
-				println(responseMessage)
+				//println(responseMessage)
 			}
 		}
 	}

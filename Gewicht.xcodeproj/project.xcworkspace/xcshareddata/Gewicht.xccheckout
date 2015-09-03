@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>61BC2165-1391-42A3-AFFD-72680B2B27E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>276084D743E2CD3B9447A8F568CD885E4CF1DA9F</key>
+		<string>https://github.com/ahoek/weight-watch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gewicht.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>276084D743E2CD3B9447A8F568CD885E4CF1DA9F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ahoek/weight-watch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>276084D743E2CD3B9447A8F568CD885E4CF1DA9F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>276084D743E2CD3B9447A8F568CD885E4CF1DA9F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Gewicht</string>
+		</dict>
+	</array>
+</dict>
+</plist>

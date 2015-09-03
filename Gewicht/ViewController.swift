@@ -16,13 +16,13 @@ class ViewController: UIViewController {
 		
 		healthManager.authorizeHealthKit { (authorized,  error) -> Void in
 			if authorized {
-				println("HealthKit authorization received.")
+				//println("HealthKit authorization received.")
 			}
 			else
 			{
-				println("HealthKit authorization denied!")
+				//println("HealthKit authorization denied!")
 				if error != nil {
-					println("\(error)")
+					//println("\(error)")
 				}
 			}
 		}
