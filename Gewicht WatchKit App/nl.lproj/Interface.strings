@@ -1,0 +1,42 @@
+
+/* Class = "WKInterfaceButton"; title = "6"; ObjectID = "1hb-rk-Hus"; */
+"1hb-rk-Hus.title" = "6";
+
+/* Class = "WKInterfaceButton"; title = "←"; ObjectID = "54N-TG-K6t"; */
+"54N-TG-K6t.title" = "←";
+
+/* Class = "WKInterfaceButton"; title = "9"; ObjectID = "5wZ-I6-xKY"; */
+"5wZ-I6-xKY.title" = "9";
+
+/* Class = "WKInterfaceController"; title = "Gewicht"; ObjectID = "AgC-eL-Hgc"; */
+"AgC-eL-Hgc.title" = "Gewicht";
+
+/* Class = "WKInterfaceButton"; title = "1"; ObjectID = "F1V-KI-hKT"; */
+"F1V-KI-hKT.title" = "1";
+
+/* Class = "WKInterfaceButton"; title = "4"; ObjectID = "FhN-Jb-g2I"; */
+"FhN-Jb-g2I.title" = "4";
+
+/* Class = "WKInterfaceButton"; title = "2"; ObjectID = "KuR-tM-cnt"; */
+"KuR-tM-cnt.title" = "2";
+
+/* Class = "WKInterfaceButton"; title = "."; ObjectID = "Lsk-bI-0m9"; */
+"Lsk-bI-0m9.title" = ".";
+
+/* Class = "WKInterfaceLabel"; text = "0"; ObjectID = "TQC-co-50g"; */
+"TQC-co-50g.text" = "0";
+
+/* Class = "WKInterfaceButton"; title = "5"; ObjectID = "YBf-uj-EKo"; */
+"YBf-uj-EKo.title" = "5";
+
+/* Class = "WKInterfaceButton"; title = "7"; ObjectID = "Ykj-wY-3ui"; */
+"Ykj-wY-3ui.title" = "7";
+
+/* Class = "WKInterfaceButton"; title = "8"; ObjectID = "eX2-Nd-sjs"; */
+"eX2-Nd-sjs.title" = "8";
+
+/* Class = "WKInterfaceButton"; title = "3"; ObjectID = "njX-UK-K01"; */
+"njX-UK-K01.title" = "3";
+
+/* Class = "WKInterfaceButton"; title = "0"; ObjectID = "ocI-oU-DZX"; */
+"ocI-oU-DZX.title" = "0";
