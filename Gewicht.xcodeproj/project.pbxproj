@@ -21,6 +21,9 @@
 		7A4522441B7C98CF000EBD0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4522431B7C98CF000EBD0B /* Images.xcassets */; };
 		7A4522471B7C98CF000EBD0B /* Gewicht WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A45222F1B7C98CF000EBD0B /* Gewicht WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7A6EA07E1B7CB0AE00A698BD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6EA07D1B7CB0AE00A698BD /* HealthKit.framework */; };
+		7A8ECC251B9D6FB0006650E1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A8ECC241B9D6FB0006650E1 /* icon.png */; };
+		7A8ECC261B9D6FB0006650E1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A8ECC241B9D6FB0006650E1 /* icon.png */; };
+		7A8ECC271B9D6FB0006650E1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A8ECC241B9D6FB0006650E1 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,10 @@
 		7A4522431B7C98CF000EBD0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7A6EA07B1B7CAD8800A698BD /* Gewicht.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gewicht.entitlements; sourceTree = "<group>"; };
 		7A6EA07D1B7CB0AE00A698BD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7A75D1221BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		7A75D1231BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7A75D1241BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
+		7A8ECC241B9D6FB0006650E1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +160,7 @@
 				7A4522141B7C989F000EBD0B /* LaunchScreen.xib */,
 				7A4522121B7C989F000EBD0B /* Images.xcassets */,
 				7A45220A1B7C989F000EBD0B /* Info.plist */,
+				7A8ECC241B9D6FB0006650E1 /* icon.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -290,7 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Arthur Hoek";
 				TargetAttributes = {
 					7A4522051B7C989F000EBD0B = {
@@ -343,6 +351,7 @@
 				7A4522111B7C989F000EBD0B /* Main.storyboard in Resources */,
 				7A4522161B7C989F000EBD0B /* LaunchScreen.xib in Resources */,
 				7A4522131B7C989F000EBD0B /* Images.xcassets in Resources */,
+				7A8ECC251B9D6FB0006650E1 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +368,7 @@
 			files = (
 				7A45223A1B7C98CF000EBD0B /* Gewicht WatchKit App.app in Resources */,
 				7A4522361B7C98CF000EBD0B /* Images.xcassets in Resources */,
+				7A8ECC261B9D6FB0006650E1 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +378,7 @@
 			files = (
 				7A4522421B7C98CF000EBD0B /* Interface.storyboard in Resources */,
 				7A4522441B7C98CF000EBD0B /* Images.xcassets in Resources */,
+				7A8ECC271B9D6FB0006650E1 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +436,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A4522101B7C989F000EBD0B /* Base */,
+				7A75D1221BA2071C00FBED4F /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -433,6 +445,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A4522151B7C989F000EBD0B /* Base */,
+				7A75D1231BA2071C00FBED4F /* nl */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -441,6 +454,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A4522411B7C98CF000EBD0B /* Base */,
+				7A75D1241BA2071C00FBED4F /* nl */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -469,6 +483,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -539,7 +554,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Gewicht/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.arthurhoek.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -553,7 +570,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Gewicht/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.arthurhoek.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -573,6 +592,7 @@
 				);
 				INFOPLIST_FILE = GewichtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.arthurhoek.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gewicht.app/Gewicht";
 			};
@@ -588,6 +608,7 @@
 				);
 				INFOPLIST_FILE = GewichtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.arthurhoek.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gewicht.app/Gewicht";
 			};
@@ -604,6 +625,7 @@
 				IBSC_MODULE = Gewicht_WatchKit_Extension;
 				INFOPLIST_FILE = "Gewicht WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.arthurhoek.Gewicht.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -618,6 +640,7 @@
 				IBSC_MODULE = Gewicht_WatchKit_Extension;
 				INFOPLIST_FILE = "Gewicht WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.arthurhoek.Gewicht.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -634,6 +657,7 @@
 				);
 				INFOPLIST_FILE = "Gewicht WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.arthurhoek.Gewicht.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
@@ -644,6 +668,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Gewicht WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.arthurhoek.Gewicht.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};

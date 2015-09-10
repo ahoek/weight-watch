@@ -80,9 +80,9 @@ class InterfaceController: WKInterfaceController {
 		if userIsInTheMiddleOfTypingANumber {
 			
 			// remove rightmost digit
-			let length = count(weight)
+			let length = weight.characters.count
 			if length > 0 {
-				weight = dropLast(weight)
+				weight = String(weight.characters.dropLast())
 			}
 			if length == 1 {
 				userIsInTheMiddleOfTypingANumber = false
@@ -126,7 +126,7 @@ class InterfaceController: WKInterfaceController {
 				responseMessage = castedResponseDictionary["message"]
 			{
 				self.userIsInTheMiddleOfTypingANumber = false
-				//println(responseMessage)
+				print(responseMessage)
 			}
 		}
 	}

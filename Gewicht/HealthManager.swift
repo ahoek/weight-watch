@@ -12,7 +12,7 @@ import HealthKit
 class HealthManager {
 	
 	let healthKitStore:HKHealthStore = HKHealthStore()
-	let type = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+	let type = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!
 	
 	func authorizeHealthKit(completion: ((success:Bool, error:NSError!) -> Void)!)
 	{
@@ -25,10 +25,10 @@ class HealthManager {
 		}
 		
 		healthKitStore.requestAuthorizationToShareTypes(
-			NSSet(objects: type) as Set<NSObject>,
-			readTypes: NSSet(objects: type) as Set<NSObject>,
-			completion: { (success: Bool, err: NSError!) -> () in
-				println("okay: \(success) error: \(err)")
+			Set(arrayLiteral: type),
+			readTypes: Set(arrayLiteral: type),
+			completion: { (success: Bool, err: NSError?) -> () in
+				print("okay: \(success) error: \(err)")
 			}
 		)
 
@@ -46,7 +46,9 @@ class HealthManager {
 				endDate: now,
 				metadata: [HKMetadataKeyWasUserEntered: true]
 			),
-			withCompletion: nil
+			withCompletion: { (success: Bool, err: NSError?) -> () in
+				print("okay: \(success) error: \(err)")
+			}
 		)
 	}
 	
