@@ -33,12 +33,6 @@ class ViewController: UIViewController {
 		authorizeHealthKit()
 	}
 	
-	@IBAction func setWeight(sender: UIButton) {
-		healthManager.storeWeight(90.1);
-		
-
-	}
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
