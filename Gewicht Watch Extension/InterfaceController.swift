@@ -5,11 +5,12 @@
 //  Created by Arthur Hoek on 13-08-15.
 //  Copyright (c) 2015 Arthur Hoek. All rights reserved.
 //
-// →
+// Watch OS 2
 
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
 	
@@ -93,7 +94,7 @@ class InterfaceController: WKInterfaceController {
 	
 	@IBAction func submitWeight() {
 		enteredWeightLabel.setTextColor(UIColor.orangeColor())
-		//sendMessageToParentApp((weight as NSString).doubleValue)
+		sendMessageToParentApp((weight as NSString).doubleValue)
 	}
 	
 	func appendDigit(digit: String) {
@@ -117,24 +118,24 @@ class InterfaceController: WKInterfaceController {
 	}
 	
 	func sendMessageToParentApp(message: Double) {
-//		let infoDictionary = ["message" : message]
-// convert to watchos2
-//		WKInterfaceController.openParentApplication(infoDictionary) {
-//			(replyDictionary, error) -> Void in
-//
-//			if let castedResponseDictionary = replyDictionary as? [String: String],
-//				responseMessage = castedResponseDictionary["message"]
-//			{
-//				self.userIsInTheMiddleOfTypingANumber = false
-//				print(responseMessage)
-//			}
-//		}
+		print("send message \(message)")
+		if WCSession.defaultSession().reachable == true {
+			
+			let requestValues = ["message" : message]
+			let session = WCSession.defaultSession()
+			
+			session.sendMessage(requestValues, replyHandler: { reply in
+				print("success");
+				self.userIsInTheMiddleOfTypingANumber = false
+				}, errorHandler: { error in
+					print("error: \(error)")
+			})
+		}
 	}
 	
 	override func awakeWithContext(context: AnyObject?) {
 		super.awakeWithContext(context)
 		
-		// Configure interface objects here.
 	}
 	
 	override func willActivate() {

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
 	var window: UIWindow?
 
@@ -17,10 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		// WatchOS 2
+		if (WCSession.isSupported()) {
+			let session = WCSession.defaultSession()
+			session.delegate = self
+			session.activateSession()
+			
+			if session.paired != true {
+				print("Apple Watch is not paired")
+			}
+			
+			if session.watchAppInstalled != true {
+				print("WatchKit app is not installed")
+			}
+		} else {
+			print("WatchConnectivity is not supported on this device")
+		}
+		
 		return true
 	}
 	
-	// Store the weight sent by WatchKit
+	// Store the weight sent by WatchOS 1
 	func application(application: UIApplication,
 		handleWatchKitExtensionRequest userInfo: [NSObject: AnyObject]?,
 		reply: ([NSObject: AnyObject]?) -> Void) {
@@ -36,6 +55,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					reply(responseDictionary)
 					
 			}
+	}
+	
+	// Store mes sent by WatchOS 2
+	func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+		
+		var replyValues = Dictionary<String, AnyObject>()
+		
+		let weight = message["message"] as? Double;
+		healthManager.storeWeight(weight!)
+		
+		let response = "Gewicht \(message) was stored."
+		print(response)
+		replyValues["message"] = response
+		
+		
+		replyHandler(replyValues)
 	}
 	
 	func applicationWillResignActive(application: UIApplication) {
