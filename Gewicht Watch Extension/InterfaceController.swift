@@ -27,6 +27,7 @@ class InterfaceController: WKInterfaceController {
 				statusLabel.setText("");
 				enteredWeightLabel.setTextColor(UIColor.whiteColor())
 			} else {
+				// todo: move to weight sent sucess
 				statusLabel.setText("👍");
 				enteredWeightLabel.setTextColor(UIColor.greenColor())
 			}
@@ -40,6 +41,9 @@ class InterfaceController: WKInterfaceController {
 			enteredWeightLabel.setText(weight)
 		}
 	}
+
+
+	// MARK: - Button presses
 	
 	@IBAction func enterZero() {
 		appendDigit("0")
@@ -126,12 +130,15 @@ class InterfaceController: WKInterfaceController {
 			
 			session.sendMessage(requestValues, replyHandler: { reply in
 				print("success");
+				WKInterfaceDevice.currentDevice().playHaptic(.Success)
 				self.userIsInTheMiddleOfTypingANumber = false
 				}, errorHandler: { error in
 					print("error: \(error)")
 			})
 		}
 	}
+	
+	// MARK: -  Life cycle
 	
 	override func awakeWithContext(context: AnyObject?) {
 		super.awakeWithContext(context)

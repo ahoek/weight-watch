@@ -5,13 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Gewicht_Watch" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="235" y="347"/>
-        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
@@ -63,9 +56,10 @@
                                                     <label height="1" alignment="center" verticalAlignment="center" text="0" textAlignment="right" id="cGv-0n-YiE">
                                                         <fontDescription key="font" type="system" pointSize="23"/>
                                                     </label>
-                                                    <label alignment="right" verticalAlignment="center" id="JEz-yH-6cv"/>
+                                                    <label alignment="right" verticalAlignment="center" baselineAdjustment="alignCenters" id="JEz-yH-6cv"/>
                                                 </items>
                                                 <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
                                             </group>
                                             <connections>
                                                 <action selector="submitWeight" destination="YpK-KU-qrI" id="z62-4K-ff9"/>
@@ -162,7 +156,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="465" y="347"/>
+            <point key="canvasLocation" x="235" y="383"/>
         </scene>
     </scenes>
 </document>

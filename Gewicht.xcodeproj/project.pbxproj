@@ -947,6 +947,7 @@
 				7A088C2E1BA388F800BAEF31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A088C311BA388F800BAEF31 /* Build configuration list for PBXNativeTarget "Gewicht Watch" */ = {
 			isa = XCConfigurationList;
@@ -955,6 +956,7 @@
 				7A088C2C1BA388F800BAEF31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4522011B7C989F000EBD0B /* Build configuration list for PBXProject "Gewicht" */ = {
 			isa = XCConfigurationList;
