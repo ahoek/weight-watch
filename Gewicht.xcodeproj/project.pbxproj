@@ -10,7 +10,7 @@
 		7A088C0C1BA388F800BAEF31 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A088C0A1BA388F800BAEF31 /* Interface.storyboard */; };
 		7A088C0E1BA388F800BAEF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A088C0D1BA388F800BAEF31 /* Assets.xcassets */; };
 		7A088C151BA388F800BAEF31 /* Gewicht Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A088C141BA388F800BAEF31 /* Gewicht Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7A088C1C1BA388F800BAEF31 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A088C1B1BA388F800BAEF31 /* InterfaceController.swift */; };
+		7A088C1C1BA388F800BAEF31 /* EntryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A088C1B1BA388F800BAEF31 /* EntryInterfaceController.swift */; };
 		7A088C1E1BA388F800BAEF31 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A088C1D1BA388F800BAEF31 /* ExtensionDelegate.swift */; };
 		7A088C201BA388F800BAEF31 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A088C1F1BA388F800BAEF31 /* NotificationController.swift */; };
 		7A088C221BA388F800BAEF31 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A088C211BA388F800BAEF31 /* GlanceController.swift */; };
@@ -30,6 +30,10 @@
 		7A4522421B7C98CF000EBD0B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4522401B7C98CF000EBD0B /* Interface.storyboard */; };
 		7A4522441B7C98CF000EBD0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4522431B7C98CF000EBD0B /* Images.xcassets */; };
 		7A4522471B7C98CF000EBD0B /* Gewicht WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A45222F1B7C98CF000EBD0B /* Gewicht WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A5E5AE51BAB4AFA00E8E30D /* HistoryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E5AE41BAB4AFA00E8E30D /* HistoryInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		7A5E5AE71BAB4F8300E8E30D /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E5AE61BAB4F8300E8E30D /* HistoryRow.swift */; settings = {ASSET_TAGS = (); }; };
+		7A5E5AEA1BAB634C00E8E30D /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3425FC1B8500A60066C84B /* HealthManager.swift */; settings = {ASSET_TAGS = (); }; };
+		7A5E5AEC1BAB648100E8E30D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5E5AEB1BAB648100E8E30D /* HealthKit.framework */; };
 		7A6EA07E1B7CB0AE00A698BD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6EA07D1B7CB0AE00A698BD /* HealthKit.framework */; };
 		7A8ECC251B9D6FB0006650E1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A8ECC241B9D6FB0006650E1 /* icon.png */; };
 		7A8ECC261B9D6FB0006650E1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A8ECC241B9D6FB0006650E1 /* icon.png */; };
@@ -117,7 +121,7 @@
 		7A088C0F1BA388F800BAEF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A088C141BA388F800BAEF31 /* Gewicht Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gewicht Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A088C1A1BA388F800BAEF31 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		7A088C1B1BA388F800BAEF31 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7A088C1B1BA388F800BAEF31 /* EntryInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryInterfaceController.swift; sourceTree = "<group>"; };
 		7A088C1D1BA388F800BAEF31 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		7A088C1F1BA388F800BAEF31 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		7A088C211BA388F800BAEF31 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,10 @@
 		7A45223F1B7C98CF000EBD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4522411B7C98CF000EBD0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7A4522431B7C98CF000EBD0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7A5E5AE41BAB4AFA00E8E30D /* HistoryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInterfaceController.swift; sourceTree = "<group>"; };
+		7A5E5AE61BAB4F8300E8E30D /* HistoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
+		7A5E5AEB1BAB648100E8E30D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		7A5E5AED1BAB648100E8E30D /* Gewicht Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Gewicht Watch Extension.entitlements"; sourceTree = "<group>"; };
 		7A6EA07B1B7CAD8800A698BD /* Gewicht.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gewicht.entitlements; sourceTree = "<group>"; };
 		7A6EA07D1B7CB0AE00A698BD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		7A75D1221BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5E5AEC1BAB648100E8E30D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +206,10 @@
 		7A088C181BA388F800BAEF31 /* Gewicht Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7A088C1B1BA388F800BAEF31 /* InterfaceController.swift */,
+				7A5E5AED1BAB648100E8E30D /* Gewicht Watch Extension.entitlements */,
+				7A088C1B1BA388F800BAEF31 /* EntryInterfaceController.swift */,
+				7A5E5AE41BAB4AFA00E8E30D /* HistoryInterfaceController.swift */,
+				7A5E5AE61BAB4F8300E8E30D /* HistoryRow.swift */,
 				7A088C1D1BA388F800BAEF31 /* ExtensionDelegate.swift */,
 				7A088C1F1BA388F800BAEF31 /* NotificationController.swift */,
 				7A088C211BA388F800BAEF31 /* GlanceController.swift */,
@@ -220,14 +232,15 @@
 		7A4521FD1B7C989F000EBD0B = {
 			isa = PBXGroup;
 			children = (
+				7A5E5AEB1BAB648100E8E30D /* HealthKit.framework */,
+				7A45221E1B7C989F000EBD0B /* GewichtTests */,
 				7A6EA07D1B7CB0AE00A698BD /* HealthKit.framework */,
 				7A4522081B7C989F000EBD0B /* Gewicht */,
-				7A45221E1B7C989F000EBD0B /* GewichtTests */,
-				7A4522301B7C98CF000EBD0B /* Gewicht WatchKit Extension */,
-				7A45223D1B7C98CF000EBD0B /* Gewicht WatchKit App */,
 				7A088C091BA388F800BAEF31 /* Gewicht Watch */,
 				7A088C181BA388F800BAEF31 /* Gewicht Watch Extension */,
 				7A4522071B7C989F000EBD0B /* Products */,
+				7A45223D1B7C98CF000EBD0B /* Gewicht WatchKit App */,
+				7A4522301B7C98CF000EBD0B /* Gewicht WatchKit Extension */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,9 +261,9 @@
 			isa = PBXGroup;
 			children = (
 				7A6EA07B1B7CAD8800A698BD /* Gewicht.entitlements */,
+				7A3425FC1B8500A60066C84B /* HealthManager.swift */,
 				7A45220B1B7C989F000EBD0B /* AppDelegate.swift */,
 				7A45220D1B7C989F000EBD0B /* ViewController.swift */,
-				7A3425FC1B8500A60066C84B /* HealthManager.swift */,
 				7A45220F1B7C989F000EBD0B /* Main.storyboard */,
 				7A4522091B7C989F000EBD0B /* Supporting Files */,
 			);
@@ -446,6 +459,12 @@
 					};
 					7A088C131BA388F800BAEF31 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = T9N5S86Q8P;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					7A4522051B7C989F000EBD0B = {
 						CreatedOnToolsVersion = 6.4;
@@ -556,9 +575,12 @@
 			files = (
 				7A088C201BA388F800BAEF31 /* NotificationController.swift in Sources */,
 				7A088C1E1BA388F800BAEF31 /* ExtensionDelegate.swift in Sources */,
+				7A5E5AE71BAB4F8300E8E30D /* HistoryRow.swift in Sources */,
+				7A5E5AE51BAB4AFA00E8E30D /* HistoryInterfaceController.swift in Sources */,
 				7A088C241BA388F800BAEF31 /* ComplicationController.swift in Sources */,
-				7A088C1C1BA388F800BAEF31 /* InterfaceController.swift in Sources */,
+				7A088C1C1BA388F800BAEF31 /* EntryInterfaceController.swift in Sources */,
 				7A088C221BA388F800BAEF31 /* GlanceController.swift in Sources */,
+				7A5E5AEA1BAB634C00E8E30D /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,11 +720,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Gewicht Watch Extension/Gewicht Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = "Gewicht Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.arthurhoek.Gewicht.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -714,10 +740,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Gewicht Watch Extension/Gewicht Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Gewicht Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.arthurhoek.Gewicht.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

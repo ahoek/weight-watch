@@ -12,10 +12,10 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
+
+class EntryInterfaceController: WKInterfaceController {
 	
-	//let healthManager:HealthManager = HealthManager()
-	
+	let healthManager:HealthManager = HealthManager()
 	
 	@IBOutlet weak var enteredWeightLabel: WKInterfaceLabel!
 	
@@ -98,7 +98,8 @@ class InterfaceController: WKInterfaceController {
 	
 	@IBAction func submitWeight() {
 		enteredWeightLabel.setTextColor(UIColor.orangeColor())
-		sendMessageToParentApp((weight as NSString).doubleValue)
+		healthManager.storeWeight((weight as NSString).doubleValue)
+		self.userIsInTheMiddleOfTypingANumber = false
 	}
 	
 	func appendDigit(digit: String) {
@@ -121,6 +122,7 @@ class InterfaceController: WKInterfaceController {
 		
 	}
 	
+	// not used anymore, health data is stored directly in watch
 	func sendMessageToParentApp(message: Double) {
 		print("send message \(message)")
 		if WCSession.defaultSession().reachable == true {

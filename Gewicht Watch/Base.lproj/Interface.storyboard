@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
-        <!--Gewicht-->
+        <!--Entry-->
         <scene sceneID="dTK-Q3-HEM">
             <objects>
-                <controller title="Gewicht" id="YpK-KU-qrI" customClass="InterfaceController" customModule="Gewicht_Watch" customModuleProvider="target">
+                <controller title="Entry" id="YpK-KU-qrI" customClass="EntryInterfaceController" customModule="Gewicht_Watch_Extension">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" spacing="2" id="dLa-V3-UbO">
                             <items>
@@ -72,6 +72,7 @@
                                         <group height="0.25" alignment="left" spacing="2" id="4kY-oo-4U7">
                                             <items>
                                                 <button width="0.33333000000000002" height="1" alignment="left" title="7" id="pMI-1A-0dn">
+                                                    <accessibilityTraits key="accessibilityTraits" button="YES" staticText="YES"/>
                                                     <connections>
                                                         <action selector="enterSeven" destination="YpK-KU-qrI" id="ey2-GG-97A"/>
                                                     </connections>
@@ -153,10 +154,42 @@
                     <connections>
                         <outlet property="enteredWeightLabel" destination="cGv-0n-YiE" id="pYe-oQ-TTi"/>
                         <outlet property="statusLabel" destination="JEz-yH-6cv" id="Cu1-k8-I6I"/>
+                        <segue destination="RkK-W4-pWF" kind="relationship" relationship="nextPage" id="Cgy-G6-E6A"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="383"/>
+            <point key="canvasLocation" x="217" y="385"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="gA7-5U-zde">
+            <objects>
+                <controller title="History" hidesWhenLoading="NO" id="RkK-W4-pWF" customClass="HistoryInterfaceController" customModule="Gewicht_Watch_Extension">
+                    <items>
+                        <table alignment="left" id="BG0-sp-t4F">
+                            <items>
+                                <tableRow identifier="HistoryRow" id="hYn-Zk-nZi" customClass="HistoryRow" customModule="Gewicht_Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Tkx-yl-HUh">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="90.6" textAlignment="center" id="QTl-kk-bHJ" userLabel="Weight Label"/>
+                                            <label alignment="right" verticalAlignment="center" text="9 jul. 19:32" id="4YG-bP-v0H">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="4YG-bP-v0H" id="qsE-f1-O4O"/>
+                                        <outlet property="weightLabel" destination="QTl-kk-bHJ" id="M9g-Pt-Yjo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="historyTable" destination="BG0-sp-t4F" id="mWL-hm-6Wb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="462" y="385"/>
         </scene>
     </scenes>
 </document>
