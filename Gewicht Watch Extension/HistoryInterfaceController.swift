@@ -16,7 +16,7 @@ class HistoryInterfaceController: WKInterfaceController {
 	// Model
 	// TODO: get from healthkit
 	
-	var history = [90.8, 89.5, 70]
+	var history = [90.8, 89.5, 70, 80, 80, 80, 80, 80, 80]
 
 	// MARK: - Outlets
 	
@@ -25,7 +25,7 @@ class HistoryInterfaceController: WKInterfaceController {
 	
 	
 	func reloadTable() {
-		historyTable.setNumberOfRows(3, withRowType: "HistoryRow")
+		historyTable.setNumberOfRows(history.count, withRowType: "HistoryRow")
 		
 		var index = 0
 		for entry in history {
@@ -46,11 +46,9 @@ class HistoryInterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
 		
 		reloadTable()
-		print("reload")
     }
 
     override func didDeactivate() {

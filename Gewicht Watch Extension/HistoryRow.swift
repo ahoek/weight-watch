@@ -10,6 +10,7 @@ import WatchKit
 
 class HistoryRow: NSObject {
 
+	@IBOutlet var dateLabel: WKInterfaceLabel!
 	@IBOutlet var weightLabel: WKInterfaceLabel!
 
 	

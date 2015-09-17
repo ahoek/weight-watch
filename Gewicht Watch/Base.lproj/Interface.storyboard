@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
-        <!--Gewicht-->
+        <!--Entry-->
         <scene sceneID="dTK-Q3-HEM">
             <objects>
-                <controller title="Gewicht" id="YpK-KU-qrI" customClass="EntryInterfaceController" customModule="Gewicht_Watch_Extension">
+                <controller title="Entry" id="YpK-KU-qrI" customClass="EntryInterfaceController" customModule="Gewicht_Watch_Extension">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" spacing="2" id="dLa-V3-UbO">
                             <items>
@@ -170,10 +170,14 @@
                                 <tableRow identifier="HistoryRow" id="hYn-Zk-nZi" customClass="HistoryRow" customModule="Gewicht_Watch_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="Tkx-yl-HUh">
                                         <items>
-                                            <label width="1" alignment="left" text="Label" textAlignment="center" id="QTl-kk-bHJ" userLabel="Weight Label"/>
+                                            <label alignment="left" verticalAlignment="center" text="90.6" textAlignment="center" id="QTl-kk-bHJ" userLabel="Weight Label"/>
+                                            <label alignment="right" verticalAlignment="center" text="9 jul. 19:32" id="4YG-bP-v0H">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
+                                        <outlet property="dateLabel" destination="4YG-bP-v0H" id="qsE-f1-O4O"/>
                                         <outlet property="weightLabel" destination="QTl-kk-bHJ" id="M9g-Pt-Yjo"/>
                                     </connections>
                                 </tableRow>
