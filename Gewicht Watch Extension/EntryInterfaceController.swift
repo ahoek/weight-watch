@@ -12,11 +12,7 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
-	
-	//let healthManager:HealthManager = HealthManager()
-	
-	
+class EntryInterfaceController: WKInterfaceController {
 	@IBOutlet weak var enteredWeightLabel: WKInterfaceLabel!
 	
 	@IBOutlet weak var statusLabel: WKInterfaceLabel!
