@@ -18,6 +18,12 @@ class HistoryInterfaceController: WKInterfaceController {
 	// TODO: get from healthkit
 	
 	var history:[HKSample] = [];
+	
+	var locale:NSLocale {
+			return NSLocale(localeIdentifier: "nl_NL")
+			//return NSLocale.currentLocale()
+		
+	}
 
 	// MARK: - Outlets
 	
@@ -38,10 +44,15 @@ class HistoryInterfaceController: WKInterfaceController {
 			self.historyTable.setNumberOfRows(self.history.count, withRowType: "HistoryRow")
 			
 			let formatter = NSDateFormatter()
-			//formatter.dateStyle = .MediumStyle
-			//formatter.timeStyle = .ShortStyle
+			formatter.locale = self.locale
+			formatter.dateStyle = .ShortStyle
+			formatter.timeStyle = .ShortStyle
+			//formatter.dateFormat = "d MMM H:mm";
 			
-			formatter.dateFormat = "d MMM H:mm";
+			let numberFormatter = NSNumberFormatter()
+			numberFormatter.locale = self.locale
+			numberFormatter.minimumFractionDigits = 1
+
 			
 			var index = 0
 			for entry in self.history {
@@ -52,7 +63,7 @@ class HistoryInterfaceController: WKInterfaceController {
 				
 				
 				if let row = self.historyTable.rowControllerAtIndex(index) as? HistoryRow {
-					row.weightLabel.setText("\(kilograms!)")
+					row.weightLabel.setText(numberFormatter.stringFromNumber(kilograms!)!)
 					print(dateString)
 					row.dateLabel.setText(dateString)
 				}

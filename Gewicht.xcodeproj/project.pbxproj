@@ -147,15 +147,16 @@
 		7A45223F1B7C98CF000EBD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4522411B7C98CF000EBD0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7A4522431B7C98CF000EBD0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7A52C2691BB3299400FC5968 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		7A52C26A1BB3299400FC5968 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7A52C26B1BB3299400FC5968 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
+		7A52C26C1BB3299500FC5968 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
 		7A5E5AE41BAB4AFA00E8E30D /* HistoryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInterfaceController.swift; sourceTree = "<group>"; };
 		7A5E5AE61BAB4F8300E8E30D /* HistoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
 		7A5E5AEB1BAB648100E8E30D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		7A5E5AED1BAB648100E8E30D /* Gewicht Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Gewicht Watch Extension.entitlements"; sourceTree = "<group>"; };
 		7A6EA07B1B7CAD8800A698BD /* Gewicht.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gewicht.entitlements; sourceTree = "<group>"; };
 		7A6EA07D1B7CB0AE00A698BD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		7A75D1221BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
-		7A75D1231BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		7A75D1241BA2071C00FBED4F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
 		7A8ECC241B9D6FB0006650E1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -645,6 +646,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A088C0B1BA388F800BAEF31 /* Base */,
+				7A52C26B1BB3299400FC5968 /* nl */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -653,7 +655,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A4522101B7C989F000EBD0B /* Base */,
-				7A75D1221BA2071C00FBED4F /* nl */,
+				7A52C2691BB3299400FC5968 /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -662,7 +664,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A4522151B7C989F000EBD0B /* Base */,
-				7A75D1231BA2071C00FBED4F /* nl */,
+				7A52C26A1BB3299400FC5968 /* nl */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -671,7 +673,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7A4522411B7C98CF000EBD0B /* Base */,
-				7A75D1241BA2071C00FBED4F /* nl */,
+				7A52C26C1BB3299500FC5968 /* nl */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";

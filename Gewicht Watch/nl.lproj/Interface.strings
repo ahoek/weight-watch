@@ -1,0 +1,54 @@
+
+/* Class = "WKInterfaceLabel"; text = "9 jul. 19:32 a.m."; ObjectID = "4YG-bP-v0H"; */
+"4YG-bP-v0H.text" = "9 jul. 19:32";
+
+/* Class = "WKInterfaceButton"; title = "8"; ObjectID = "8iz-rM-NBn"; */
+"8iz-rM-NBn.title" = "8";
+
+/* Class = "WKInterfaceButton"; title = "."; ObjectID = "BS6-Ab-4Gx"; */
+"BS6-Ab-4Gx.title" = ",";
+
+/* Class = "WKInterfaceButton"; title = "0"; ObjectID = "DNH-58-PT6"; */
+"DNH-58-PT6.title" = "0";
+
+/* Class = "WKInterfaceButton"; title = "4"; ObjectID = "EUk-9d-edj"; */
+"EUk-9d-edj.title" = "4";
+
+/* Class = "WKInterfaceButton"; title = "1"; ObjectID = "P8G-vm-zHP"; */
+"P8G-vm-zHP.title" = "1";
+
+/* Class = "WKInterfaceButton"; title = "6"; ObjectID = "PuN-DJ-KgZ"; */
+"PuN-DJ-KgZ.title" = "6";
+
+/* Class = "WKInterfaceLabel"; text = "90.6"; ObjectID = "QTl-kk-bHJ"; */
+"QTl-kk-bHJ.text" = "90,6";
+
+/* Class = "WKInterfaceController"; title = "History"; ObjectID = "RkK-W4-pWF"; */
+"RkK-W4-pWF.title" = "Historie";
+
+/* Class = "WKInterfaceButton"; title = "3"; ObjectID = "SMI-6J-U8y"; */
+"SMI-6J-U8y.title" = "3";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "XkS-y5-khE"; */
+"XkS-y5-khE.text" = "Alert Label";
+
+/* Class = "WKInterfaceController"; title = "Entry"; ObjectID = "YpK-KU-qrI"; */
+"YpK-KU-qrI.title" = "Invoer";
+
+/* Class = "WKInterfaceLabel"; text = "0"; ObjectID = "cGv-0n-YiE"; */
+"cGv-0n-YiE.text" = "0";
+
+/* Class = "WKInterfaceButton"; title = "←"; ObjectID = "drH-ic-gnJ"; */
+"drH-ic-gnJ.title" = "←";
+
+/* Class = "WKInterfaceButton"; title = "9"; ObjectID = "mic-wd-bKJ"; */
+"mic-wd-bKJ.title" = "9";
+
+/* Class = "WKInterfaceButton"; title = "2"; ObjectID = "mlf-5e-G1j"; */
+"mlf-5e-G1j.title" = "2";
+
+/* Class = "WKInterfaceButton"; title = "7"; ObjectID = "pMI-1A-0dn"; */
+"pMI-1A-0dn.title" = "7";
+
+/* Class = "WKInterfaceButton"; title = "5"; ObjectID = "tkM-pd-D8n"; */
+"tkM-pd-D8n.title" = "5";

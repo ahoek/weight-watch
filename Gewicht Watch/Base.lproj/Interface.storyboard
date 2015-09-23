@@ -173,8 +173,8 @@
                                             <label alignment="left" verticalAlignment="center" text="90.6" textAlignment="center" id="QTl-kk-bHJ" userLabel="Weight Label">
                                                 <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                             </label>
-                                            <label alignment="right" verticalAlignment="center" text="9 jul. 19:32 a.m." id="4YG-bP-v0H">
-                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            <label alignment="right" verticalAlignment="center" text="9 jul. 19:32" id="4YG-bP-v0H">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
                                         </items>
                                     </group>
