@@ -17,6 +17,21 @@ class EntryInterfaceController: WKInterfaceController {
 	
 	let healthManager:HealthManager = HealthManager()
 	
+	var locale:NSLocale {
+		//return NSLocale(localeIdentifier: "nl_NL")
+		return NSLocale.currentLocale()
+	}
+
+	var formatter:NSNumberFormatter {
+		let numberFormatter = NSNumberFormatter()
+		numberFormatter.locale = locale
+		return numberFormatter
+	}
+	
+	var decimalSeparator:String {
+		return formatter.decimalSeparator
+	}
+	
 	@IBOutlet weak var enteredWeightLabel: WKInterfaceLabel!
 	
 	@IBOutlet weak var statusLabel: WKInterfaceLabel!
@@ -77,9 +92,8 @@ class EntryInterfaceController: WKInterfaceController {
 	}
 	
 	@IBAction func enterDecimalPoint() {
-		appendDigit(".")
-	}
-	
+		appendDigit(decimalSeparator)
+	}	
 	
 	@IBAction func backspace() {
 		if userIsInTheMiddleOfTypingANumber {
@@ -98,28 +112,29 @@ class EntryInterfaceController: WKInterfaceController {
 	
 	@IBAction func submitWeight() {
 		enteredWeightLabel.setTextColor(UIColor.orangeColor())
-		healthManager.storeWeight((weight as NSString).doubleValue)
-		self.userIsInTheMiddleOfTypingANumber = false
+		if let weightNumber = formatter.numberFromString(weight) {
+			print(weightNumber.doubleValue)
+			healthManager.storeWeight(weightNumber.doubleValue)
+			WKInterfaceDevice.currentDevice().playHaptic(.Success)
+			self.userIsInTheMiddleOfTypingANumber = false
+		}
 	}
 	
 	func appendDigit(digit: String) {
 		if userIsInTheMiddleOfTypingANumber {
 			// Do not allow two decimal points in number
-			if digit == "." && weight.rangeOfString(".") == nil {
-				weight = weight + "."
-			} else {
-				weight = weight + digit
+			if digit != decimalSeparator || weight.rangeOfString(decimalSeparator) == nil {
+				weight += digit
 			}
 		} else {
 			// First digit
-			if digit == "." {
-				weight = "0."
+			if digit == decimalSeparator {
+				weight = "0" + decimalSeparator
 			} else {
 				weight = digit
 			}
 			userIsInTheMiddleOfTypingANumber = true
 		}
-		
 	}
 	
 	// not used anymore, health data is stored directly in watch
@@ -132,7 +147,7 @@ class EntryInterfaceController: WKInterfaceController {
 			
 			session.sendMessage(requestValues, replyHandler: { reply in
 				print("success");
-				WKInterfaceDevice.currentDevice().playHaptic(.Success)
+				
 				self.userIsInTheMiddleOfTypingANumber = false
 				}, errorHandler: { error in
 					print("error: \(error)")

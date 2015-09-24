@@ -20,9 +20,8 @@ class HistoryInterfaceController: WKInterfaceController {
 	var history:[HKSample] = [];
 	
 	var locale:NSLocale {
-			return NSLocale(localeIdentifier: "nl_NL")
-			//return NSLocale.currentLocale()
-		
+		//return NSLocale(localeIdentifier: "nl_NL")
+		return NSLocale.currentLocale()
 	}
 
 	// MARK: - Outlets
